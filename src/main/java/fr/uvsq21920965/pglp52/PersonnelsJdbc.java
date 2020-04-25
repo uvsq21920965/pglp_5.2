@@ -15,12 +15,12 @@ public class PersonnelsJdbc implements Dao<Personnels>{
    * un attribut pour établire la connexion.
    */
   private Connection connexion = null;
-  
+
   /**
    * la requte da creation de la table Personnels.
    */
-  private String table = "create table Personnels(nom varchar(20) PRIMARY KEY NOT NULL, " 
-	         + " prenom  varchar(20), fonction varchar(20))";
+  private String table = "create table Personnels(nom varchar(20) NOT NULL PRIMARY KEY, " 
+	         + " prenom  varchar(20) NOT NULL, fonction varchar(20) , idGroupe integer)";
   
   /**
    * attribut statemet.
@@ -28,7 +28,8 @@ public class PersonnelsJdbc implements Dao<Personnels>{
   private Statement statement;
 
   /**
-   * Constructeur.
+   * Constructeur pour établissement de la connexion.
+   * et la creation de la table si elle n'existe pas .
    */
   public PersonnelsJdbc() {
 	  connexion=this.getConnection();
@@ -48,14 +49,14 @@ public class PersonnelsJdbc implements Dao<Personnels>{
   /**
    * methode pour insérer un tuple dans la table personels.
    * @param obj Personnels.
-   * @return obj crée.
+   * @return obj crée sinon null.
    */
   @Override
   public Personnels create(Personnels obj) {
 	connexion=this.getConnection();
 	int status = 0;
-    String insertString = "insert into Personnels(nom, prenom, fonction) values ('" + obj.getNom() 
-        + "','" + obj.getPrenom() + "','" + obj.getFonctions() + "')";
+    String insertString = "insert into Personnels(nom, prenom, fonction,idGroupe) values ('"+ obj.getNom() 
+        + "','" + obj.getPrenom() + "','" + obj.getFonctions() + "',"+obj.getIdGroupe()+")";
     try {
       status=connexion.createStatement().executeUpdate(insertString);
       connexion.close();
@@ -73,7 +74,7 @@ public class PersonnelsJdbc implements Dao<Personnels>{
   /**
    * methode pour trouver le tuple personnels.
    * @param id nom du personnels.
-   * @return objet personnels crée.
+   * @return objet personnels trouvé ,null sinon.
    */
   @Override
   public Personnels find(String id) {
@@ -86,7 +87,8 @@ public class PersonnelsJdbc implements Dao<Personnels>{
 	    String nom = resultat.getString("nom");
 	    String prenom = resultat.getString("prenom");
 	    String fonction = resultat.getString("Fonction");
-	    ps = new Personnels.Builder(nom, prenom, fonction).build();
+		int idG = resultat.getInt("idGroupe");
+	    ps = new Personnels.Builder(nom, prenom, fonction).idGroupe(idG).build();
 	  }
 	connexion.close();
 	} catch (SQLException e) {

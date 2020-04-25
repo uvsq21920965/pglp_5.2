@@ -11,6 +11,7 @@ import java.util.List;
  *
  */
 public final class Personnels implements Ipersonnels, Serializable {
+
   /**
    * nom du personnels.
    */
@@ -35,6 +36,11 @@ public final class Personnels implements Ipersonnels, Serializable {
    * numero de telephone.
    */
   private  List<Integer> numeroDeTel;
+
+  /**
+   * Identifiant.
+   */
+  private final int idGroupe;
 
   /**
    * Builder Class.
@@ -69,6 +75,11 @@ public final class Personnels implements Ipersonnels, Serializable {
     private  List<Integer> numeroDeTel = new ArrayList<Integer>();
 
     /**
+	 * Identifiant du groupe.
+	 */
+	private int idGroupe;
+
+    /**
      * initialiser les attributs.
      * @param nom nom du personnel.
      * @param prenom prenom dupersonnel.
@@ -100,6 +111,15 @@ public final class Personnels implements Ipersonnels, Serializable {
       this.numeroDeTel = numeroDeTelAtt;
       return (this);
     }
+    /**
+     * intialiser id du groupe.
+     * @param dateDeNaissAtt .
+     * @return date de naissance initialise.
+     */
+    public Builder idGroupe(int idGroupeAtt) {
+      this.idGroupe = idGroupeAtt;
+      return (this);
+    }
 
     /**
      * methode pour creer l'objet personnel.
@@ -120,6 +140,15 @@ public final class Personnels implements Ipersonnels, Serializable {
     fonctions = build.fonctions;
     dateDeNaiss = build.dateDeNaiss;
     numeroDeTel = build.numeroDeTel;
+    idGroupe=build.idGroupe;
+  }
+
+  /**
+   * methode pour retourner id du groupe.
+   * @return iddu groupe.
+   */
+  public int getIdGroupe() {
+    return idGroupe;
   }
 
   /**
@@ -170,7 +199,7 @@ public final class Personnels implements Ipersonnels, Serializable {
     for (int num:this.numeroDeTel) {
       numtel.append(num);
     }
-    return "nom : " + this.nom + " " + "prenom : " + this.prenom + " " + "fonctions:"
+    return "id du groupe : " + this.idGroupe+ " " +"nom : " + this.nom + " " + "prenom : " + this.prenom + " " + "fonctions:"
       + this.fonctions + " " + "dateDeNaiss :" + this.dateDeNaiss + " " + "numero de telephone"
       + numtel;
   }
