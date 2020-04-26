@@ -1,0 +1,11 @@
+/home/oem/git/pglp_5.2/src/main/java/fr/uvsq21920965/pglp52/PersonnelsDao.java
+/home/oem/git/pglp_5.2/src/main/java/fr/uvsq21920965/pglp52/PersonnelsJdbc.java
+/home/oem/git/pglp_5.2/src/main/java/fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java
+/home/oem/git/pglp_5.2/src/main/java/fr/uvsq21920965/pglp52/AfficheIteratorGroupe.java
+/home/oem/git/pglp_5.2/src/main/java/fr/uvsq21920965/pglp52/Ipersonnels.java
+/home/oem/git/pglp_5.2/src/main/java/fr/uvsq21920965/pglp52/Iterator.java
+/home/oem/git/pglp_5.2/src/main/java/fr/uvsq21920965/pglp52/Dao.java
+/home/oem/git/pglp_5.2/src/main/java/fr/uvsq21920965/pglp52/CompositePersonnels.java
+/home/oem/git/pglp_5.2/src/main/java/fr/uvsq21920965/pglp52/CompositePersonnelsDao.java
+/home/oem/git/pglp_5.2/src/main/java/fr/uvsq21920965/pglp52/Personnels.java
+/home/oem/git/pglp_5.2/src/main/java/fr/uvsq21920965/pglp52/package-info.java

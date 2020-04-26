@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 
 public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
@@ -55,6 +56,12 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
     String insertString = "insert into CompositePersonnels(groupeId, nomGroupe) values (" + obj.getId()+",'"+obj.getNomGroupe()+"')";
     try {
       status=connexion.createStatement().executeUpdate(insertString);
+      PersonnelsJdbc pj = new PersonnelsJdbc();
+      for (Ipersonnels p: obj.getPersonnes()) {
+          if (!(p instanceof CompositePersonnels)) {
+            pj.create((Personnels) p);
+          }
+        }
       connexion.close();
     } catch (SQLException e) {
       e.printStackTrace();
