@@ -6,8 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.List;
-
 
 public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
   /**
@@ -56,7 +54,8 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
     String insertString = "insert into CompositePersonnels(groupeId, nomGroupe) values (" + obj.getId()+",'"+obj.getNomGroupe()+"')";
     try {
       status=connexion.createStatement().executeUpdate(insertString);
-      PersonnelsJdbc pj = new PersonnelsJdbc();
+      DaoJdbc djdbc = new  DaoJdbc();
+      Dao<Personnels> pj = djdbc.createPersonnelsJdbc();
       for (Ipersonnels p: obj.getPersonnes()) {
           if (!(p instanceof CompositePersonnels)) {
             pj.create((Personnels) p);
@@ -91,7 +90,8 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
       find.setInt(1, groupeid);
       find.execute();
       ResultSet resultat = find.getResultSet();
-      PersonnelsJdbc pj = new PersonnelsJdbc();
+      DaoJdbc djdbc = new  DaoJdbc();
+      Dao<Personnels> pj = djdbc.createPersonnelsJdbc();
       Personnels ps=null;
       if (resultat.next()) {
         cp = new CompositePersonnels(resultat.getInt("groupeId"),resultat.getString("nomGroupe"));
@@ -146,7 +146,8 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
 	connexion=this.getConnection();
     PreparedStatement delete = null;
     try {
-      PersonnelsJdbc pj = new PersonnelsJdbc();
+    	DaoJdbc djdbc = new  DaoJdbc();
+        Dao<Personnels> pj = djdbc.createPersonnelsJdbc();
       for (Ipersonnels p: obj.getPersonnes()) {
         if (!(p instanceof CompositePersonnels)) {
           pj.delete((Personnels) p);

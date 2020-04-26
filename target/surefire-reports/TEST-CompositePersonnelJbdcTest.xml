@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="CompositePersonnelJbdcTest" time="5.808" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="CompositePersonnelJbdcTest" time="0.838" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -25,7 +25,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/oem/Documents/java_work_space/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8673270655769132911.tmp"/>
+    <property name="classworlds.conf" value="/home/oem/Documents/java_work_space/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf4799110246951469444.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,8 +61,8 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="CompositePersonnelJbdcTest" name="Test1create" time="4.897"/>
-  <testcase classname="CompositePersonnelJbdcTest" name="Test2find" time="0.439"/>
-  <testcase classname="CompositePersonnelJbdcTest" name="Test3upDate" time="0.246"/>
-  <testcase classname="CompositePersonnelJbdcTest" name="Test4delete" time="0.226"/>
+  <testcase classname="CompositePersonnelJbdcTest" name="Test1create" time="0.385"/>
+  <testcase classname="CompositePersonnelJbdcTest" name="Test2find" time="0.207"/>
+  <testcase classname="CompositePersonnelJbdcTest" name="Test3upDate" time="0.135"/>
+  <testcase classname="CompositePersonnelJbdcTest" name="Test4delete" time="0.111"/>
 </testsuite>

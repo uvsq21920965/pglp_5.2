@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1587924578000" analysisTimestamp="1587924805401" release="">
+  <Project projectName="pglp_5.1">
+    <Jar>/home/oem/git/pglp_5.2/target/classes</Jar>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/mojo/findbugs-maven-plugin/3.0.4/findbugs-maven-plugin-3.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/com/google/code/findbugs/findbugs/3.0.1/findbugs-3.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/com/google/code/findbugs/bcel-findbugs/6.0/bcel-findbugs-6.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/com/google/code/findbugs/jFormatString/2.0.1/jFormatString-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/ow2/asm/asm-debug-all/5.0.2/asm-debug-all-5.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/ow2/asm/asm-commons/5.0.2/asm-commons-5.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/ow2/asm/asm-tree/5.0.2/asm-tree-5.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/ow2/asm/asm/5.0.2/asm-5.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/com/apple/AppleJavaExtensions/1.4/AppleJavaExtensions-1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/jaxen/jaxen/1.1.6/jaxen-1.1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/ant/ant/1.9.4/ant-1.9.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/groovy/groovy/2.4.7/groovy-2.4.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/groovy/groovy-ant/2.4.7/groovy-ant-2.4.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/ant/ant-antlr/1.9.4/ant-antlr-1.9.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/groovy/groovy-groovydoc/2.4.7/groovy-groovydoc-2.4.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/groovy/groovy-templates/2.4.7/groovy-templates-2.4.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/ant/ant-junit/1.9.4/ant-junit-1.9.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/groovy/groovy-xml/2.4.7/groovy-xml-2.4.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/2.1/maven-reporting-impl-2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/maven-project/2.0.10/maven-project-2.0.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/maven-settings/2.0.10/maven-settings-2.0.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/maven-profile/2.0.10/maven-profile-2.0.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/maven-plugin-registry/2.0.10/maven-plugin-registry-2.0.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/commons-validator/commons-validator/1.2.0/commons-validator-1.2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/commons-digester/commons-digester/1.6/commons-digester-1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/doxia/doxia-core/1.4/doxia-core-1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.4/doxia-logging-api-1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.4/doxia-decoration-model-1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.4/doxia-module-xhtml-1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.4/doxia-module-fml-1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/commons-chain/commons-chain/1.1/commons-chain-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/sslext/sslext/1.2-0/sslext-1.2-0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/antlr/antlr/2.7.2/antlr-2.7.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/shared/maven-doxia-tools/1.2.1/maven-doxia-tools-1.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/plexus/plexus-resources/1.0-alpha-7/plexus-resources-1.0-alpha-7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/oem/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="7844d7ab0d757f6c37129c73b0624f45" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.create(CompositePersonnels) may fail to clean up java.sql.Statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="1" end="189" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java">
+        <Message>At CompositePersonnelsJdbc.java:[lines 1-189]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.CompositePersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" name="create" signature="(Lfr/uvsq21920965/pglp52/CompositePersonnels;)Lfr/uvsq21920965/pglp52/CompositePersonnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="54" end="73" startBytecode="0" endBytecode="374" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.create(CompositePersonnels)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true" start="58" end="58" startBytecode="51" endBytecode="51" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at CompositePersonnelsJdbc.java:[line 58] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="59" end="59" startBytecode="63" endBytecode="63" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 59]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="60" end="60" startBytecode="72" endBytecode="72" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 60]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="65" end="65" startBytecode="127" endBytecode="127" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 65]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="66" end="66" startBytecode="136" endBytecode="136" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 66]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="69" end="69" startBytecode="146" endBytecode="146" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 69]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="73" end="73" startBytecode="152" endBytecode="152" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 73]</Message>
+    </SourceLine>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="4e95432ea71204aa9455d10924329572" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.delete(CompositePersonnels) may fail to clean up java.sql.Statement on checked exception</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="1" end="189" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java">
+        <Message>At CompositePersonnelsJdbc.java:[lines 1-189]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.CompositePersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" name="delete" signature="(Lfr/uvsq21920965/pglp52/CompositePersonnels;)V" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="146" end="171" startBytecode="0" endBytecode="431" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.delete(CompositePersonnels)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="2" role="INT_OBLIGATIONS_REMAINING">
+      <Message>2 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true" start="158" end="158" startBytecode="91" endBytecode="91" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at CompositePersonnelsJdbc.java:[line 158] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="159" end="159" startBytecode="97" endBytecode="97" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 159]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="160" end="160" startBytecode="106" endBytecode="106" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 160]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="161" end="161" startBytecode="113" endBytecode="113" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 161]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="161" end="161" startBytecode="119" endBytecode="119" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at CompositePersonnelsJdbc.java:[line 161] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="162" end="162" startBytecode="125" endBytecode="125" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 162]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="168" end="168" startBytecode="160" endBytecode="160" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 168]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="169" end="169" startBytecode="161" endBytecode="161" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 169]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="171" end="171" startBytecode="165" endBytecode="165" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 171]</Message>
+    </SourceLine>
+    <String value="{Statement x 2}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 2}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="b755b7cadb798d1a5effd6ec3eaa1dd2" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.find(String) may fail to clean up java.sql.Statement on checked exception</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="1" end="189" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java">
+        <Message>At CompositePersonnelsJdbc.java:[lines 1-189]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.CompositePersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" name="find" signature="(Ljava/lang/String;)Lfr/uvsq21920965/pglp52/CompositePersonnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="84" end="114" startBytecode="0" endBytecode="573" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.find(String)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="2" role="INT_OBLIGATIONS_REMAINING">
+      <Message>2 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true" start="90" end="90" startBytecode="27" endBytecode="27" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at CompositePersonnelsJdbc.java:[line 90] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="91" end="91" startBytecode="34" endBytecode="34" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 91]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="92" end="92" startBytecode="43" endBytecode="43" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 92]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="93" end="93" startBytecode="51" endBytecode="51" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 93]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="94" end="94" startBytecode="60" endBytecode="60" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 94]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="95" end="95" startBytecode="69" endBytecode="69" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 95]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="96" end="96" startBytecode="72" endBytecode="72" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 96]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="97" end="97" startBytecode="82" endBytecode="82" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 97]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="98" end="98" startBytecode="109" endBytecode="109" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 98]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="99" end="99" startBytecode="113" endBytecode="113" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 99]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="99" end="99" startBytecode="119" endBytecode="119" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at CompositePersonnelsJdbc.java:[line 99] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="100" end="100" startBytecode="126" endBytecode="126" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 100]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="111" end="111" startBytecode="211" endBytecode="211" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 111]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="112" end="112" startBytecode="213" endBytecode="213" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 112]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="114" end="114" startBytecode="218" endBytecode="218" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 114]</Message>
+    </SourceLine>
+    <String value="{Statement x 2}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 2}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="f7d116869ae3dcf404281fd4b55ad03c" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource on checked exception</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.update(CompositePersonnels) may fail to clean up java.sql.Statement on checked exception</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="1" end="189" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java">
+        <Message>At CompositePersonnelsJdbc.java:[lines 1-189]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.CompositePersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" name="update" signature="(Lfr/uvsq21920965/pglp52/CompositePersonnels;)Lfr/uvsq21920965/pglp52/CompositePersonnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="124" end="138" startBytecode="0" endBytecode="269" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.update(CompositePersonnels)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true" start="129" end="129" startBytecode="21" endBytecode="21" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at CompositePersonnelsJdbc.java:[line 129] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="130" end="130" startBytecode="28" endBytecode="28" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 130]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="135" end="135" startBytecode="79" endBytecode="79" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 135]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="136" end="136" startBytecode="81" endBytecode="81" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 136]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="138" end="138" startBytecode="86" endBytecode="86" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at CompositePersonnelsJdbc.java:[line 138]</Message>
+    </SourceLine>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" instanceHash="8a4eb90e522c00bdf33f86dfbc7c7cad" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to close database resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.create(CompositePersonnels) may fail to close Statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="1" end="189" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java">
+        <Message>At CompositePersonnelsJdbc.java:[lines 1-189]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.CompositePersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" name="create" signature="(Lfr/uvsq21920965/pglp52/CompositePersonnels;)Lfr/uvsq21920965/pglp52/CompositePersonnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="54" end="73" startBytecode="0" endBytecode="64" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.create(CompositePersonnels)</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/Statement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Need to close java.sql.Statement </Message>
+    </Type>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true" start="58" end="58" startBytecode="51" endBytecode="51" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java">
+      <Message>At CompositePersonnelsJdbc.java:[line 58]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" instanceHash="c0258d0a10c19535696e044250fcd8ae" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to close database resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.delete(CompositePersonnels) may fail to close PreparedStatement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="1" end="189" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java">
+        <Message>At CompositePersonnelsJdbc.java:[lines 1-189]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.CompositePersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" name="delete" signature="(Lfr/uvsq21920965/pglp52/CompositePersonnels;)V" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="146" end="171" startBytecode="0" endBytecode="70" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.delete(CompositePersonnels)</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1265" end="1318" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java">
+        <Message>At PreparedStatement.java:[lines 1265-1318]</Message>
+      </SourceLine>
+      <Message>Need to close java.sql.PreparedStatement </Message>
+    </Type>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true" start="158" end="158" startBytecode="91" endBytecode="91" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java">
+      <Message>At CompositePersonnelsJdbc.java:[line 158]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE" priority="1" rank="10" abbrev="SQL" category="SECURITY" instanceHash="b588595cc5c117eef8343030ff36db37" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="89">
+    <ShortMessage>Nonconstant string passed to execute or addBatch method on an SQL statement</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.create(CompositePersonnels) passes a nonconstant String to an execute or addBatch method on an SQL statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="1" end="189" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java">
+        <Message>At CompositePersonnelsJdbc.java:[lines 1-189]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.CompositePersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" name="create" signature="(Lfr/uvsq21920965/pglp52/CompositePersonnels;)Lfr/uvsq21920965/pglp52/CompositePersonnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" start="54" end="73" startBytecode="0" endBytecode="64" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.create(CompositePersonnels)</Message>
+    </Method>
+    <SourceLine classname="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" primary="true" start="58" end="58" startBytecode="57" endBytecode="57" sourcefile="CompositePersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java">
+      <Message>At CompositePersonnelsJdbc.java:[line 58]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="21dc13d74f0ed616f73e8fa150792fde" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.create(Personnels) may fail to clean up java.sql.Statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="create" signature="(Lfr/uvsq21920965/pglp52/Personnels;)Lfr/uvsq21920965/pglp52/Personnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="56" end="70" startBytecode="0" endBytecode="277" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.create(Personnels)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="61" end="61" startBytecode="75" endBytecode="75" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at PersonnelsJdbc.java:[line 61] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="62" end="62" startBytecode="87" endBytecode="87" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 62]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="63" end="63" startBytecode="96" endBytecode="96" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 63]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="66" end="66" startBytecode="106" endBytecode="106" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 66]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="70" end="70" startBytecode="112" endBytecode="112" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 70]</Message>
+    </SourceLine>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="b552f39d81f6213e1d29a5850429f4ed" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.delete(Personnels) may fail to clean up java.sql.Statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="delete" signature="(Lfr/uvsq21920965/pglp52/Personnels;)V" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="125" end="133" startBytecode="0" endBytecode="198" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.delete(Personnels)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="128" end="128" startBytecode="37" endBytecode="37" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at PersonnelsJdbc.java:[line 128] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="129" end="129" startBytecode="49" endBytecode="49" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 129]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="130" end="130" startBytecode="58" endBytecode="58" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 130]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="133" end="133" startBytecode="66" endBytecode="66" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 133]</Message>
+    </SourceLine>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="e0c574dc597cc57bd39a66e594ed56b5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.find(String) may fail to clean up java.sql.ResultSet</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="find" signature="(Ljava/lang/String;)Lfr/uvsq21920965/pglp52/Personnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="81" end="97" startBytecode="0" endBytecode="380" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.find(String)</Message>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java">
+        <Message>At ResultSet.java:[lines 4188-4289]</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.ResultSet</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="85" end="85" startBytecode="42" endBytecode="42" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at PersonnelsJdbc.java:[line 85] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="86" end="86" startBytecode="49" endBytecode="49" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 86]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="93" end="93" startBytecode="125" endBytecode="125" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 93]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="94" end="94" startBytecode="134" endBytecode="134" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 94]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="97" end="97" startBytecode="144" endBytecode="144" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 97]</Message>
+    </SourceLine>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1,ResultSet x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="9d5283880b0f9de92ceb2cca093ded1b" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.find(String) may fail to clean up java.sql.Statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="find" signature="(Ljava/lang/String;)Lfr/uvsq21920965/pglp52/Personnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="81" end="97" startBytecode="0" endBytecode="380" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.find(String)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="85" end="85" startBytecode="36" endBytecode="36" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at PersonnelsJdbc.java:[line 85] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="86" end="86" startBytecode="49" endBytecode="49" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 86]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="93" end="93" startBytecode="125" endBytecode="125" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 93]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="94" end="94" startBytecode="134" endBytecode="134" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 94]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="97" end="97" startBytecode="144" endBytecode="144" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 97]</Message>
+    </SourceLine>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1,ResultSet x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" instanceHash="cb116b430c437b5b0a5acb8dcbd86778" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to clean up stream or resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.update(Personnels) may fail to clean up java.sql.Statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="update" signature="(Lfr/uvsq21920965/pglp52/Personnels;)Lfr/uvsq21920965/pglp52/Personnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="107" end="116" startBytecode="0" endBytecode="255" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.update(Personnels)</Message>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Reference type java.sql.Statement</Message>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING">
+      <Message>1 instances of obligation remaining</Message>
+    </Int>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="111" end="111" startBytecode="85" endBytecode="85" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED">
+      <Message>Obligation to clean up resource created at PersonnelsJdbc.java:[line 111] is not discharged</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="112" end="112" startBytecode="97" endBytecode="97" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 112]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="113" end="113" startBytecode="106" endBytecode="106" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 113]</Message>
+    </SourceLine>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="116" end="116" startBytecode="114" endBytecode="114" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" role="SOURCE_LINE_PATH_CONTINUES">
+      <Message>Path continues at PersonnelsJdbc.java:[line 116]</Message>
+    </SourceLine>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS">
+      <Message>Remaining obligations: {Statement x 1}</Message>
+    </String>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" instanceHash="95bc5a90fc81ba8cad6521d6af068de5" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to close database resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.create(Personnels) may fail to close Statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="create" signature="(Lfr/uvsq21920965/pglp52/Personnels;)Lfr/uvsq21920965/pglp52/Personnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="56" end="70" startBytecode="0" endBytecode="50" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.create(Personnels)</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/Statement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Need to close java.sql.Statement </Message>
+    </Type>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="61" end="61" startBytecode="75" endBytecode="75" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+      <Message>At PersonnelsJdbc.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" instanceHash="8c4fd22a209c3ea9135b5ed6a49fa262" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to close database resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.delete(Personnels) may fail to close Statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="delete" signature="(Lfr/uvsq21920965/pglp52/Personnels;)V" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="125" end="133" startBytecode="0" endBytecode="28" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.delete(Personnels)</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/Statement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Need to close java.sql.Statement </Message>
+    </Type>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="128" end="128" startBytecode="37" endBytecode="37" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+      <Message>At PersonnelsJdbc.java:[line 128]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" instanceHash="bb6306d8ba5a5d8515eb7cb305ca046" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to close database resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.find(String) may fail to close Statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="find" signature="(Ljava/lang/String;)Lfr/uvsq21920965/pglp52/Personnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="81" end="97" startBytecode="0" endBytecode="59" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.find(String)</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/Statement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Need to close java.sql.Statement </Message>
+    </Type>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="85" end="85" startBytecode="36" endBytecode="36" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+      <Message>At PersonnelsJdbc.java:[line 85]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" instanceHash="bb8f15d443c3ec6475c59088aa215749" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to close database resource</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.update(Personnels) may fail to close Statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="update" signature="(Lfr/uvsq21920965/pglp52/Personnels;)Lfr/uvsq21920965/pglp52/Personnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="107" end="116" startBytecode="0" endBytecode="49" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.update(Personnels)</Message>
+    </Method>
+    <Type descriptor="Ljava/sql/Statement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java">
+        <Message>At Statement.java:[lines 1092-1368]</Message>
+      </SourceLine>
+      <Message>Need to close java.sql.Statement </Message>
+    </Type>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="111" end="111" startBytecode="85" endBytecode="85" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+      <Message>At PersonnelsJdbc.java:[line 111]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE" priority="1" rank="10" abbrev="SQL" category="SECURITY" instanceHash="f39772cad1139b2f9626c319cfe93562" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="89">
+    <ShortMessage>Nonconstant string passed to execute or addBatch method on an SQL statement</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.create(Personnels) passes a nonconstant String to an execute or addBatch method on an SQL statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="create" signature="(Lfr/uvsq21920965/pglp52/Personnels;)Lfr/uvsq21920965/pglp52/Personnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="56" end="70" startBytecode="0" endBytecode="50" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.create(Personnels)</Message>
+    </Method>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="61" end="61" startBytecode="81" endBytecode="81" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+      <Message>At PersonnelsJdbc.java:[line 61]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE" priority="1" rank="10" abbrev="SQL" category="SECURITY" instanceHash="85043828b55c689ec7b76b9a44ac78ad" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="89">
+    <ShortMessage>Nonconstant string passed to execute or addBatch method on an SQL statement</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.delete(Personnels) passes a nonconstant String to an execute or addBatch method on an SQL statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="delete" signature="(Lfr/uvsq21920965/pglp52/Personnels;)V" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="125" end="133" startBytecode="0" endBytecode="28" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.delete(Personnels)</Message>
+    </Method>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="128" end="128" startBytecode="43" endBytecode="43" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+      <Message>At PersonnelsJdbc.java:[line 128]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE" priority="1" rank="10" abbrev="SQL" category="SECURITY" instanceHash="e5fcd8d187f661af092c3e90a3c78218" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="89">
+    <ShortMessage>Nonconstant string passed to execute or addBatch method on an SQL statement</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.find(String) passes a nonconstant String to an execute or addBatch method on an SQL statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="find" signature="(Ljava/lang/String;)Lfr/uvsq21920965/pglp52/Personnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="81" end="97" startBytecode="0" endBytecode="59" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.find(String)</Message>
+    </Method>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="85" end="85" startBytecode="42" endBytecode="42" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+      <Message>At PersonnelsJdbc.java:[line 85]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE" priority="1" rank="10" abbrev="SQL" category="SECURITY" instanceHash="6f2cbfa50d8df40d2c5009b76b267f7e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="89">
+    <ShortMessage>Nonconstant string passed to execute or addBatch method on an SQL statement</ShortMessage>
+    <LongMessage>fr.uvsq21920965.pglp52.PersonnelsJdbc.update(Personnels) passes a nonconstant String to an execute or addBatch method on an SQL statement</LongMessage>
+    <Class classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="1" end="151" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+        <Message>At PersonnelsJdbc.java:[lines 1-151]</Message>
+      </SourceLine>
+      <Message>In class fr.uvsq21920965.pglp52.PersonnelsJdbc</Message>
+    </Class>
+    <Method classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" name="update" signature="(Lfr/uvsq21920965/pglp52/Personnels;)Lfr/uvsq21920965/pglp52/Personnels;" isStatic="false" primary="true">
+      <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" start="107" end="116" startBytecode="0" endBytecode="49" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java"/>
+      <Message>In method fr.uvsq21920965.pglp52.PersonnelsJdbc.update(Personnels)</Message>
+    </Method>
+    <SourceLine classname="fr.uvsq21920965.pglp52.PersonnelsJdbc" primary="true" start="111" end="111" startBytecode="91" endBytecode="91" sourcefile="PersonnelsJdbc.java" sourcepath="fr/uvsq21920965/pglp52/PersonnelsJdbc.java">
+      <Message>At PersonnelsJdbc.java:[line 111]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="SECURITY">
+    <Description>Security</Description>
+  </BugCategory>
+  <BugCategory category="EXPERIMENTAL">
+    <Description>Experimental</Description>
+  </BugCategory>
+  <BugPattern type="ODR_OPEN_DATABASE_RESOURCE" abbrev="ODR" category="BAD_PRACTICE">
+    <ShortDescription>Method may fail to close database resource</ShortDescription>
+    <Details><![CDATA[
+
+<p> The method creates a database resource (such as a database connection
+or row set), does not assign it to any
+fields, pass it to other methods, or return it, and does not appear to close
+the object on all paths out of the method.&nbsp; Failure to
+close database resources on all paths out of a method may
+result in poor performance, and could cause the application to
+have problems communicating with the database.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE" abbrev="SQL" category="SECURITY" cweid="89">
+    <ShortDescription>Nonconstant string passed to execute or addBatch method on an SQL statement</ShortDescription>
+    <Details><![CDATA[
+
+  <p>The method invokes the execute or addBatch method on an SQL statement with a String that seems
+to be dynamically generated. Consider using
+a prepared statement instead. It is more efficient and less vulnerable to
+SQL injection attacks.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="OBL_UNSATISFIED_OBLIGATION" abbrev="OBL" category="EXPERIMENTAL">
+    <ShortDescription>Method may fail to clean up stream or resource</ShortDescription>
+    <Details><![CDATA[
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          To send feedback, either:
+          </p>
+          <ul>
+            <li>send email to findbugs@cs.umd.edu</li>
+            <li>file a bug report: <a href="http://findbugs.sourceforge.net/reportingBugs.html">http://findbugs.sourceforge.net/reportingBugs.html</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" abbrev="OBL" category="EXPERIMENTAL">
+    <ShortDescription>Method may fail to clean up stream or resource on checked exception</ShortDescription>
+    <Details><![CDATA[
+          
+          <p>
+          This method may fail to clean up (close, dispose of) a stream,
+          database object, or other
+          resource requiring an explicit cleanup operation.
+          </p>
+
+          <p>
+          In general, if a method opens a stream or other resource,
+          the method should use a try/finally block to ensure that
+          the stream or resource is cleaned up before the method
+          returns.
+          </p>
+
+          <p>
+          This bug pattern is essentially the same as the
+          OS_OPEN_STREAM and ODR_OPEN_DATABASE_RESOURCE
+          bug patterns, but is based on a different
+          (and hopefully better) static analysis technique.
+          We are interested is getting feedback about the
+          usefulness of this bug pattern.
+          To send feedback, either:
+          </p>
+          <ul>
+            <li>send email to findbugs@cs.umd.edu</li>
+            <li>file a bug report: <a href="http://findbugs.sourceforge.net/reportingBugs.html">http://findbugs.sourceforge.net/reportingBugs.html</a></li>
+          </ul>
+
+          <p>
+          In particular,
+          the false-positive suppression heuristics for this
+          bug pattern have not been extensively tuned, so
+          reports about false positives are helpful to us.
+          </p>
+
+          <p>
+          See Weimer and Necula, <i>Finding and Preventing Run-Time Error Handling Mistakes</i>, for
+          a description of the analysis technique.
+          </p>
+          
+      ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="OBL">
+    <Description>Unsatisfied obligation to clean up stream or resource</Description>
+  </BugCode>
+  <BugCode abbrev="ODR">
+    <Description>Database resource not closed on all paths</Description>
+  </BugCode>
+  <BugCode abbrev="SQL">
+    <Description>Potential SQL Problem</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 26 Apr 2020 20:09:38 +0200" total_classes="13" referenced_classes="47" total_bugs="20" total_size="439" num_packages="1" java_version="1.8.0_222" vm_version="25.222-b10" cpu_seconds="16.74" clock_seconds="5.37" peak_mbytes="183.47" alloc_mbytes="455.50" gc_seconds="0.10" priority_2="15" priority_1="5">
+    <FileStats path="fr/uvsq21920965/pglp52/AfficheIteratorGroupe.java" bugCount="0" size="33"/>
+    <FileStats path="fr/uvsq21920965/pglp52/CompositePersonnels.java" bugCount="0" size="31"/>
+    <FileStats path="fr/uvsq21920965/pglp52/CompositePersonnelsDao.java" bugCount="0" size="50"/>
+    <FileStats path="fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java" bugCount="7" size="112" bugHash="5cb6b2d62a69c3ca97d04f13242bae6b"/>
+    <FileStats path="fr/uvsq21920965/pglp52/Dao.java" bugCount="0" size="5"/>
+    <FileStats path="fr/uvsq21920965/pglp52/Ipersonnels.java" bugCount="0" size="2"/>
+    <FileStats path="fr/uvsq21920965/pglp52/Iterator.java" bugCount="0" size="3"/>
+    <FileStats path="fr/uvsq21920965/pglp52/Personnels.java" bugCount="0" size="72"/>
+    <FileStats path="fr/uvsq21920965/pglp52/PersonnelsDao.java" bugCount="0" size="53"/>
+    <FileStats path="fr/uvsq21920965/pglp52/PersonnelsJdbc.java" bugCount="13" size="77" bugHash="eff82631be474dca5cc7c9ada550238a"/>
+    <FileStats path="fr/uvsq21920965/pglp52/package-info.java" bugCount="0" size="1"/>
+    <PackageStats package="fr.uvsq21920965.pglp52" total_bugs="20" total_types="13" total_size="439" priority_2="15" priority_1="5">
+      <ClassStats class="fr.uvsq21920965.pglp52.AfficheIteratorGroupe" sourceFile="AfficheIteratorGroupe.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.AfficheIteratorGroupe$IpersonnelsIteratorGroupe" sourceFile="AfficheIteratorGroupe.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.CompositePersonnels" sourceFile="CompositePersonnels.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.CompositePersonnelsDao" sourceFile="CompositePersonnelsDao.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.CompositePersonnelsJdbc" sourceFile="CompositePersonnelsJdbc.java" interface="false" size="112" bugs="7" priority_2="6" priority_1="1"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.Dao" sourceFile="Dao.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.Ipersonnels" sourceFile="Ipersonnels.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.Iterator" sourceFile="Iterator.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.Personnels" sourceFile="Personnels.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.Personnels$Builder" sourceFile="Personnels.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.PersonnelsDao" sourceFile="PersonnelsDao.java" interface="false" size="53" bugs="0"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.PersonnelsJdbc" sourceFile="PersonnelsJdbc.java" interface="false" size="77" bugs="13" priority_2="9" priority_1="4"/>
+      <ClassStats class="fr.uvsq21920965.pglp52.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="954" invocations="518" avgMicrosecondsPerInvocation="1842" maxMicrosecondsPerInvocation="305002" standardDeviationMircosecondsPerInvocation="14186"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="303" invocations="520" avgMicrosecondsPerInvocation="582" maxMicrosecondsPerInvocation="36140" standardDeviationMircosecondsPerInvocation="2166"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="169" invocations="47" avgMicrosecondsPerInvocation="3609" maxMicrosecondsPerInvocation="23481" standardDeviationMircosecondsPerInvocation="5738"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="154" invocations="80" avgMicrosecondsPerInvocation="1932" maxMicrosecondsPerInvocation="32452" standardDeviationMircosecondsPerInvocation="4452"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="145" invocations="47" avgMicrosecondsPerInvocation="3101" maxMicrosecondsPerInvocation="19765" standardDeviationMircosecondsPerInvocation="4342"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="136" invocations="80" avgMicrosecondsPerInvocation="1711" maxMicrosecondsPerInvocation="22062" standardDeviationMircosecondsPerInvocation="3529"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="133" invocations="173" avgMicrosecondsPerInvocation="771" maxMicrosecondsPerInvocation="19949" standardDeviationMircosecondsPerInvocation="1925"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="117" invocations="71" avgMicrosecondsPerInvocation="1658" maxMicrosecondsPerInvocation="14050" standardDeviationMircosecondsPerInvocation="2490"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="108" invocations="479" avgMicrosecondsPerInvocation="225" maxMicrosecondsPerInvocation="3212" standardDeviationMircosecondsPerInvocation="402"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="96" invocations="55" avgMicrosecondsPerInvocation="1755" maxMicrosecondsPerInvocation="8873" standardDeviationMircosecondsPerInvocation="1849"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="90" invocations="71" avgMicrosecondsPerInvocation="1269" maxMicrosecondsPerInvocation="24428" standardDeviationMircosecondsPerInvocation="2897"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="86" invocations="71" avgMicrosecondsPerInvocation="1212" maxMicrosecondsPerInvocation="9129" standardDeviationMircosecondsPerInvocation="1857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="85" invocations="78" avgMicrosecondsPerInvocation="1098" maxMicrosecondsPerInvocation="68219" standardDeviationMircosecondsPerInvocation="7652"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="81" invocations="13" avgMicrosecondsPerInvocation="6265" maxMicrosecondsPerInvocation="42096" standardDeviationMircosecondsPerInvocation="11353"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="78" invocations="38" avgMicrosecondsPerInvocation="2064" maxMicrosecondsPerInvocation="42129" standardDeviationMircosecondsPerInvocation="6674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="77" invocations="47" avgMicrosecondsPerInvocation="1643" maxMicrosecondsPerInvocation="20654" standardDeviationMircosecondsPerInvocation="3691"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="68" invocations="47" avgMicrosecondsPerInvocation="1461" maxMicrosecondsPerInvocation="9971" standardDeviationMircosecondsPerInvocation="2430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="66" invocations="91" avgMicrosecondsPerInvocation="735" maxMicrosecondsPerInvocation="21722" standardDeviationMircosecondsPerInvocation="2378"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="57" invocations="47" avgMicrosecondsPerInvocation="1224" maxMicrosecondsPerInvocation="32398" standardDeviationMircosecondsPerInvocation="4684"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="56" invocations="52" avgMicrosecondsPerInvocation="1080" maxMicrosecondsPerInvocation="4949" standardDeviationMircosecondsPerInvocation="1204"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
