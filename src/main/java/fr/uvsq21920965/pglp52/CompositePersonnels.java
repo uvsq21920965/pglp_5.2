@@ -16,6 +16,11 @@ public class CompositePersonnels implements Ipersonnels,Serializable {
   private int id;
 
   /**
+   * nom du groupe
+   */
+  String nomGroupe;
+
+  /**
    * liste des Ipersonnels.
    */
   private List<Ipersonnels> personnes;
@@ -25,8 +30,9 @@ public class CompositePersonnels implements Ipersonnels,Serializable {
    * @param idAtt id du groupede personnels.
    */
 
-  public CompositePersonnels(int idAtt) {
+  public CompositePersonnels(int idAtt,String nomGroupeAtt) {
     id = idAtt;
+    nomGroupe = nomGroupeAtt;
     personnes = new ArrayList<Ipersonnels>();
   }
 
@@ -44,6 +50,14 @@ public class CompositePersonnels implements Ipersonnels,Serializable {
    */
   public int getId() {
     return id;
+  }
+
+  /**
+   *  methode pour acceder a nom du groupe.
+   *  @return nom du groupe.
+   */
+  public String getNomGroupe( ) {
+	  return nomGroupe;
   }
 
   /**

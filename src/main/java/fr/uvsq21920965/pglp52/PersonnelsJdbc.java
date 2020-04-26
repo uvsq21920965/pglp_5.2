@@ -99,14 +99,14 @@ public class PersonnelsJdbc implements Dao<Personnels>{
 
   /**
    * methode pour mettre à jour un tuple personnels.
-   * @param obj l'objet qu'on veut mettre à jour.
+   * @param obj l'objet pour faire mise à jour.
    * @return l'objet après la mise à jour.
    */
   @Override
   public Personnels update(Personnels obj) {
 	connexion=this.getConnection();
 	String updateString = "update Personnels set nom ='"+obj.getNom()+"', prenom ='"+obj.getPrenom()+"',fonction ='"
-	    +obj.getFonctions()+"' where nom ='"+obj.getNom()+"'";
+	    +obj.getFonctions()+"',idGroupe = "+obj.getIdGroupe()+" where nom ='"+obj.getNom()+"'";
 	try {
 	  connexion.createStatement().executeUpdate(updateString);
 	  connexion.close();
@@ -149,19 +149,5 @@ public class PersonnelsJdbc implements Dao<Personnels>{
 		e.printStackTrace();
 	}
 	return connexion;
-  }
-  
-  /**
-   * methode pour supprimer la table Personnels.
-   */
-  public void deleteTable() {
-    connexion=this.getConnection();
-	String deleteTableString = "drop table Personnels";
-	try {
-	  connexion.createStatement().execute(deleteTableString);
-	  connexion.close();
-	} catch (SQLException e1) {
-	  e1.printStackTrace();
-	}
   }
 }
