@@ -2,6 +2,7 @@ package fr.uvsq21920965.pglp52;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -54,14 +55,26 @@ public class PersonnelsJdbc implements Dao<Personnels>{
   @Override
   public Personnels create(Personnels obj) {
 	connexion=this.getConnection();
+	PreparedStatement create =  null;
 	int status = 0;
-    String insertString = "insert into Personnels(nom, prenom, fonction,idGroupe) values ('"+ obj.getNom() 
-        + "','" + obj.getPrenom() + "','" + obj.getFonctions() + "',"+obj.getIdGroupe()+")";
+    String insertString = "insert into Personnels(nom, prenom, fonction,idGroupe) values (?,?,?,?)";
     try {
-      status=connexion.createStatement().executeUpdate(insertString);
+      create = connexion.prepareStatement(insertString);
+      create.setString(1, obj.getNom());
+      create.setString(2, obj.getPrenom());
+      create.setString(3, obj.getFonctions());
+      create.setInt(4, obj.getIdGroupe());
+      status = create.executeUpdate();
       connexion.close();
 	} catch (SQLException e) {
       e.printStackTrace();
+	}
+    try {
+    	if(create != null) {
+    		create.close();	
+    	}
+	} catch (SQLException e1) {
+		e1.printStackTrace();
 	}
     if ( status > 0) {
     	return obj;	
@@ -79,20 +92,31 @@ public class PersonnelsJdbc implements Dao<Personnels>{
   @Override
   public Personnels find(String id) {
 	connexion=this.getConnection();
+	PreparedStatement find =  null;
 	Personnels ps = null;
-	String findString = "select * from Personnels where nom ='"+id+"'"; 
+	ResultSet resultat = null;
+	String findString = "select * from Personnels where nom = (?)"; 
 	try {
-	  ResultSet resultat = connexion.createStatement().executeQuery(findString);
+	  find = connexion.prepareStatement(findString);
+	  find.setString(1, id);
+      resultat = find.getResultSet();
 	  if (resultat.next()) {
 	    String nom = resultat.getString("nom");
 	    String prenom = resultat.getString("prenom");
 	    String fonction = resultat.getString("Fonction");
 		int idG = resultat.getInt("idGroupe");
 	    ps = new Personnels.Builder(nom, prenom, fonction).idGroupe(idG).build();
+	    connexion.close();
 	  }
-	connexion.close();
 	} catch (SQLException e) {
 	  e.printStackTrace();
+	}
+	try {
+	  if(find != null) {
+	    find.close();	
+	}
+	} catch (SQLException e1) {
+      e1.printStackTrace();
 	}
 	return ps;
   }
@@ -105,13 +129,24 @@ public class PersonnelsJdbc implements Dao<Personnels>{
   @Override
   public Personnels update(Personnels obj) {
 	connexion=this.getConnection();
-	String updateString = "update Personnels set nom ='"+obj.getNom()+"', prenom ='"+obj.getPrenom()+"',fonction ='"
-	    +obj.getFonctions()+"',idGroupe = "+obj.getIdGroupe()+" where nom ='"+obj.getNom()+"'";
+	PreparedStatement update =  null;
+	String updateString = "update Personnels set prenom = (?), fonction = (?), idGroupe = (?) where nom =(?)";
 	try {
-	  connexion.createStatement().executeUpdate(updateString);
-	  connexion.close();
+	  update = connexion.prepareStatement(updateString);
+      update.setString(1, obj.getPrenom());
+      update.setString(2, obj.getFonctions());
+      update.setInt(3, obj.getIdGroupe());
+      update.executeUpdate();
+      connexion.close();
 	} catch (SQLException e) {
 	  e.printStackTrace();
+	}
+	try {
+		if(update != null) {
+		  update.close();
+		}
+	} catch (SQLException e1) {
+		e1.printStackTrace();
 	}
 	return obj;
   }
@@ -123,12 +158,22 @@ public class PersonnelsJdbc implements Dao<Personnels>{
   @Override
   public void delete(Personnels obj) {
 	connexion=this.getConnection();
-	String deleteString = "delete from Personnels where nom ='"+obj.getNom()+"'";
+	PreparedStatement delete =  null;
+	String deleteString = "delete from Personnels where nom =(?)";
 	try {
-		connexion.createStatement().executeUpdate(deleteString);
+		delete = connexion.prepareStatement(deleteString);
+		delete.setString(1, obj.getNom());
+		delete.executeUpdate();
 		connexion.close();
 	} catch (SQLException e) {
 	  e.printStackTrace();
+	}
+	try {
+		if(delete != null) {
+		  delete.close();
+		}
+	} catch (SQLException e1) {
+		e1.printStackTrace();
 	}
   }
 

@@ -15,10 +15,10 @@
 -docencoding
 'UTF-8'
 -doctitle
-'pglp_5.1 0.0.1-SNAPSHOT API'
+'pglp_5.2 0.0.1-SNAPSHOT API'
 -linkoffline
 'http://download.oracle.com/javase/6/docs/api' '/home/oem/git/pglp_5.2/target/javadoc-bundle-options'
 -use
 -version
 -windowtitle
-'pglp_5.1 0.0.1-SNAPSHOT API'
+'pglp_5.2 0.0.1-SNAPSHOT API'

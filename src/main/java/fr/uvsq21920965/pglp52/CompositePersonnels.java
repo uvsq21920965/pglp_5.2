@@ -16,7 +16,7 @@ public class CompositePersonnels implements Ipersonnels,Serializable {
   private int id;
 
   /**
-   * nom du groupe
+   * nom du groupe.
    */
   String nomGroupe;
 
@@ -56,8 +56,8 @@ public class CompositePersonnels implements Ipersonnels,Serializable {
    *  methode pour acceder a nom du groupe.
    *  @return nom du groupe.
    */
-  public String getNomGroupe( ) {
-	  return nomGroupe;
+  public String getNomGroupe () {
+    return nomGroupe;
   }
 
   /**

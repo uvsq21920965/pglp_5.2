@@ -16,8 +16,8 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
   /**
    * la requte da creation de la table CompositePersonnels.
    */
-  private String table = "create table CompositePersonnels(groupeId INTEGER primary key not null"+
-    ", nomGroupe varchar(20) not null )";
+  private String table = "create table CompositePersonnels(groupeId INTEGER primary key not null"
+      + ", nomGroupe varchar(20) not null )";
 
   /**
    *  attribut statemet.
@@ -28,11 +28,11 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
    * Constructeur.
    */
   public CompositePersonnelsJdbc() {
-    connexion=this.getConnection();
+    connexion = this.getConnection();
     try {
       ResultSet res = connexion.getMetaData().getTables(null,null, "CompositePersonnels".toUpperCase(), null);
       statement = connexion.createStatement();
-      if(!res.next()) {
+      if (!res.next()) {
         statement.execute(table);
       }
       statement.close();
@@ -49,26 +49,40 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
    */
   @Override
   public CompositePersonnels create(CompositePersonnels obj) {
-    connexion=this.getConnection();
+    connexion = this.getConnection();
+    PreparedStatement create =  null;
     int status = 0;
-    String insertString = "insert into CompositePersonnels(groupeId, nomGroupe) values (" + obj.getId()+",'"+obj.getNomGroupe()+"')";
+    String insertString = "insert into CompositePersonnels(groupeId, nomGroupe) values (?,?)";
     try {
-      status=connexion.createStatement().executeUpdate(insertString);
+      create = connexion.prepareStatement(insertString);
+      create.setInt(1, obj.getId());
+      create.setString(1, obj.getNomGroupe());
+      status = create.executeUpdate();
       DaoJdbc djdbc = new  DaoJdbc();
       Dao<Personnels> pj = djdbc.createPersonnelsJdbc();
       for (Ipersonnels p: obj.getPersonnes()) {
-          if (!(p instanceof CompositePersonnels)) {
-            pj.create((Personnels) p);
-          }
+        if (!(p instanceof CompositePersonnels)) {
+          pj.create((Personnels) p);
         }
-      connexion.close();
+      }
     } catch (SQLException e) {
       e.printStackTrace();
 	}
-    if ( status > 0) {
+    try {
+    	if (create != null) {
+        create.close();
+    	}
+  	} catch (SQLException e2) {
+        e2.printStackTrace();
+  	}
+    try {
+      connexion.close();
+	} catch (SQLException e1) {
+      e1.printStackTrace();
+	}
+    if (status > 0) {
       return obj;	
-    }
-    else {
+    }else {
       return null;
     }
   }
@@ -85,6 +99,7 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
     String findString = "select * from CompositePersonnels where groupeId = (?)";
     CompositePersonnels cp = null;
     PreparedStatement find = null;
+    PreparedStatement findG = null;
     try {
       find = connexion.prepareStatement(findString);
       find.setInt(1, groupeid);
@@ -96,7 +111,7 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
       if (resultat.next()) {
         cp = new CompositePersonnels(resultat.getInt("groupeId"),resultat.getString("nomGroupe"));
         String findGroupe = "select nom from Personnels,CompositePersonnels where idGroupe = (?)";
-        PreparedStatement findG = connexion.prepareStatement(findGroupe);
+        findG = connexion.prepareStatement(findGroupe);
         findG.setInt(1, groupeid);
         findG.execute();
         ResultSet resultat1 = findG.getResultSet();
@@ -104,13 +119,30 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
           ps=pj.find(resultat1.getString("nom"));
           cp.add(ps);
         }
-        findG.close();
       }
-      find.close();
-      connexion.close();
     } catch (SQLException e) {
       e.printStackTrace();
     }
+    try {
+      if (findG != null) {
+        findG.close();
+      }
+	} catch (SQLException e1) {
+	  e1.printStackTrace();
+	}
+    try {
+      if (find != null) {
+        find.close();
+      }
+	} catch (SQLException e2) {
+		e2.printStackTrace();
+	}
+	try {
+		connexion.close();
+	} catch (SQLException e3) {
+		e3.printStackTrace();
+	}
+    	
     return cp;
   }
 
@@ -121,7 +153,7 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
    */
   @Override
   public CompositePersonnels update(CompositePersonnels obj) {
-    connexion=this.getConnection();
+    connexion = this.getConnection();
     String updateString = "update CompositePersonnels set nomGroupe = (?) where groupeId = (?)";
     CompositePersonnels cp = null;
     PreparedStatement update = null;
@@ -130,13 +162,24 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
       update.setString(1, obj.getNomGroupe());
       update.setInt(2, obj.getId());
       update.execute();
-      update.close();
-      connexion.close();
     } catch (SQLException e) {
       e.printStackTrace();
 	}
+    try {
+    	if (update != null) {
+		  update.close();
+    	}
+	} catch (SQLException e) {
+		e.printStackTrace();
+	}
+    try {
+		connexion.close();
+	} catch (SQLException e1) {
+		e1.printStackTrace();
+	}
 	return cp;
   }
+
   /**
    * methode pour supprimer le tuple de l'objet Compositepersonnels dele bd.
    * @param obj Personnels à supprimer.
@@ -145,6 +188,7 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
   public void delete(CompositePersonnels obj) {
 	connexion=this.getConnection();
     PreparedStatement delete = null;
+    PreparedStatement delete1 = null;
     try {
     	DaoJdbc djdbc = new  DaoJdbc();
         Dao<Personnels> pj = djdbc.createPersonnelsJdbc();
@@ -159,16 +203,31 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
       delete = connexion.prepareStatement(deleteString);
       delete.setInt(1, groupeid);
       delete.execute();
-      delete = connexion.prepareStatement(deleteString1);
-      delete.setInt(1, groupeid);
-      delete.execute();
-      delete.close();
-      if (delete != null) {
-        delete.close();
-	  }
+      delete1 = connexion.prepareStatement(deleteString1);
+      delete1.setInt(1, groupeid);
+      delete1.execute();
     } catch (SQLException e) {
       e.printStackTrace();
     }
+    try {
+    	if (delete != null) {
+		  delete.close();
+    	}
+	} catch (SQLException e1) {
+	  e1.printStackTrace();
+	}
+    try {
+    	if (delete1 != null) {
+		  delete1.close();
+    	}
+	} catch (SQLException e2) {
+	  e2.printStackTrace();
+	}
+    try {
+		connexion.close();
+	} catch (SQLException e3) {
+	  e3.printStackTrace();
+	}
   }
 
   /**

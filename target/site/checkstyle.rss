@@ -19,15 +19,15 @@ under the License.
 -->
 <rss version="0.91">
   <channel>
-    <title>pglp_5.1 - Checkstyle report</title>
+    <title>pglp_5.2 - Checkstyle report</title>
     <link>${project.url}</link>
-    <description>pglp_5.1 - Checkstyle report</description>
+    <description>pglp_5.2 - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 11,
+      <title>File: 7,
              Errors: 0,
-             Warnings: 264,
+             Warnings: 396,
              Infos: 0
       </title>
             <link>${project.url}/checkstyle.html</link>
@@ -46,34 +46,6 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp52.AfficheIteratorGroupe.java">fr/uvsq21920965/pglp52/AfficheIteratorGroupe.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp52.PersonnelsDao.java">fr/uvsq21920965/pglp52/PersonnelsDao.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp52.CompositePersonnels.java">fr/uvsq21920965/pglp52/CompositePersonnels.java</a>
                 </td>
                 <td>
@@ -88,41 +60,27 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp52.Iterator.java">fr/uvsq21920965/pglp52/Iterator.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp52.CompositePersonnelsDao.java">fr/uvsq21920965/pglp52/CompositePersonnelsDao.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp52.CompositePersonnelsJdbc.java">fr/uvsq21920965/pglp52/CompositePersonnelsJdbc.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  64
+                  145
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp52.AbstracteDao.java">fr/uvsq21920965/pglp52/AbstracteDao.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
                 </td>
                 <td>
                   0
@@ -136,7 +94,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  181
+                  215
                 </td>
                 <td>
                   0
@@ -144,27 +102,13 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp52.Ipersonnels.java">fr/uvsq21920965/pglp52/Ipersonnels.java</a>
+                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp52.DaoJdbc.java">fr/uvsq21920965/pglp52/DaoJdbc.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp52.package-info.java">fr/uvsq21920965/pglp52/package-info.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
+                  16
                 </td>
                 <td>
                   0
