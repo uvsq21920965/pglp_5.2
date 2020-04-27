@@ -9,5 +9,6 @@ package fr.uvsq21920965.pglp52;
 
 public interface AbstracteDao {
   Dao<Personnels> createPersonnelsJdbc();
+
   Dao<CompositePersonnels> createCompositePersonnelsJdbc();
 }

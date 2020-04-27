@@ -30,7 +30,8 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
   public CompositePersonnelsJdbc() {
     connexion = this.getConnection();
     try {
-      ResultSet res = connexion.getMetaData().getTables(null,null, "CompositePersonnels".toUpperCase(), null);
+      ResultSet res = connexion.getMetaData()
+          .getTables(null,null, "CompositePersonnels".toUpperCase(), null);
       statement = connexion.createStatement();
       if (!res.next()) {
         statement.execute(table);
@@ -56,7 +57,7 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
     try {
       create = connexion.prepareStatement(insertString);
       create.setInt(1, obj.getId());
-      create.setString(1, obj.getNomGroupe());
+      create.setString(2, obj.getNomGroupe());
       status = create.executeUpdate();
       DaoJdbc djdbc = new  DaoJdbc();
       Dao<Personnels> pj = djdbc.createPersonnelsJdbc();
@@ -65,24 +66,20 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
           pj.create((Personnels) p);
         }
       }
+      connexion.close();
     } catch (SQLException e) {
       e.printStackTrace();
-	}
+    }
     try {
-    	if (create != null) {
+      if (create != null) {
         create.close();
-    	}
-  	} catch (SQLException e2) {
-        e2.printStackTrace();
-  	}
-    try {
-      connexion.close();
-	} catch (SQLException e1) {
-      e1.printStackTrace();
-	}
+      }
+    } catch (SQLException e2) {
+      e2.printStackTrace();
+    }
     if (status > 0) {
-      return obj;	
-    }else {
+      return obj;
+    } else {
       return null;
     }
   }
@@ -94,7 +91,7 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
    */
   @Override
   public CompositePersonnels find(String id) {
-    connexion=this.getConnection();
+    connexion = this.getConnection();
     int groupeid = Integer.parseInt(id);
     String findString = "select * from CompositePersonnels where groupeId = (?)";
     CompositePersonnels cp = null;
@@ -107,7 +104,7 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
       ResultSet resultat = find.getResultSet();
       DaoJdbc djdbc = new  DaoJdbc();
       Dao<Personnels> pj = djdbc.createPersonnelsJdbc();
-      Personnels ps=null;
+      Personnels ps = null;
       if (resultat.next()) {
         cp = new CompositePersonnels(resultat.getInt("groupeId"),resultat.getString("nomGroupe"));
         String findGroupe = "select nom from Personnels,CompositePersonnels where idGroupe = (?)";
@@ -116,9 +113,10 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
         findG.execute();
         ResultSet resultat1 = findG.getResultSet();
         if (resultat1.next()) {
-          ps=pj.find(resultat1.getString("nom"));
+          ps = pj.find(resultat1.getString("nom"));
           cp.add(ps);
         }
+        connexion.close();
       }
     } catch (SQLException e) {
       e.printStackTrace();
@@ -127,22 +125,16 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
       if (findG != null) {
         findG.close();
       }
-	} catch (SQLException e1) {
-	  e1.printStackTrace();
-	}
+    } catch (SQLException e1) {
+      e1.printStackTrace();
+    }
     try {
       if (find != null) {
         find.close();
       }
-	} catch (SQLException e2) {
-		e2.printStackTrace();
-	}
-	try {
-		connexion.close();
-	} catch (SQLException e3) {
-		e3.printStackTrace();
-	}
-    	
+    } catch (SQLException e2) {
+      e2.printStackTrace();
+    }
     return cp;
   }
 
@@ -155,29 +147,25 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
   public CompositePersonnels update(CompositePersonnels obj) {
     connexion = this.getConnection();
     String updateString = "update CompositePersonnels set nomGroupe = (?) where groupeId = (?)";
-    CompositePersonnels cp = null;
+    final CompositePersonnels cp = null;
     PreparedStatement update = null;
     try {
       update = connexion.prepareStatement(updateString);
       update.setString(1, obj.getNomGroupe());
       update.setInt(2, obj.getId());
       update.execute();
+      connexion.close();
     } catch (SQLException e) {
       e.printStackTrace();
-	}
+    }
     try {
-    	if (update != null) {
-		  update.close();
-    	}
-	} catch (SQLException e) {
-		e.printStackTrace();
-	}
-    try {
-		connexion.close();
-	} catch (SQLException e1) {
-		e1.printStackTrace();
-	}
-	return cp;
+      if (update != null) {
+        update.close();
+      }
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+    return cp;
   }
 
   /**
@@ -186,19 +174,19 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
    */
   @Override
   public void delete(CompositePersonnels obj) {
-	connexion=this.getConnection();
+    connexion = this.getConnection();
     PreparedStatement delete = null;
     PreparedStatement delete1 = null;
     try {
-    	DaoJdbc djdbc = new  DaoJdbc();
-        Dao<Personnels> pj = djdbc.createPersonnelsJdbc();
+      DaoJdbc djdbc = new  DaoJdbc();
+      Dao<Personnels> pj = djdbc.createPersonnelsJdbc();
       for (Ipersonnels p: obj.getPersonnes()) {
         if (!(p instanceof CompositePersonnels)) {
           pj.delete((Personnels) p);
         }
       }
-      String deleteString = "Delete from CompositePersonnels where groupeId = (?)";
-      String deleteString1 ="Update Personnels set idGroupe = null where idGroupe = (?)";
+      final String deleteString = "Delete from CompositePersonnels where groupeId = (?)";
+      final String deleteString1 = "Update Personnels set idGroupe = null where idGroupe = (?)";
       int groupeid = obj.getId();
       delete = connexion.prepareStatement(deleteString);
       delete.setInt(1, groupeid);
@@ -206,46 +194,42 @@ public class CompositePersonnelsJdbc implements Dao<CompositePersonnels> {
       delete1 = connexion.prepareStatement(deleteString1);
       delete1.setInt(1, groupeid);
       delete1.execute();
+      connexion.close();
     } catch (SQLException e) {
       e.printStackTrace();
     }
     try {
-    	if (delete != null) {
-		  delete.close();
-    	}
-	} catch (SQLException e1) {
-	  e1.printStackTrace();
-	}
+      if (delete != null) {
+        delete.close();
+      }
+    } catch (SQLException e1) {
+      e1.printStackTrace();
+    }
     try {
-    	if (delete1 != null) {
-		  delete1.close();
-    	}
-	} catch (SQLException e2) {
-	  e2.printStackTrace();
-	}
-    try {
-		connexion.close();
-	} catch (SQLException e3) {
-	  e3.printStackTrace();
-	}
+      if (delete1 != null) {
+        delete1.close();
+      }
+    } catch (SQLException e2) {
+      e2.printStackTrace();
+    }
   }
 
   /**
    * methode pour Connecter à la base de données sarradb.
    */
   public Connection getConnection() {
-    Connection connexion=null;
-    String driver="org.apache.derby.jdbc.EmbeddedDriver";
+    Connection connexion = null;
+    String driver = "org.apache.derby.jdbc.EmbeddedDriver";
     try {
-	  Class.forName(driver);
+      Class.forName(driver);
     } catch (ClassNotFoundException e) {
-	  e.printStackTrace();
+      e.printStackTrace();
     }
     try {
-	  connexion = DriverManager.getConnection("jdbc:derby:sarradb;create=true");
-	} catch (SQLException e) {
+      connexion = DriverManager.getConnection("jdbc:derby:sarradb;create=true");
+    } catch (SQLException e) {
       e.printStackTrace();
-	}
-	return connexion;
+    }
+    return connexion;
   }
 }

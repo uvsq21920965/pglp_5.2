@@ -75,9 +75,9 @@ public final class Personnels implements Ipersonnels, Serializable {
     private  List<Integer> numeroDeTel = new ArrayList<Integer>();
 
     /**
-	 * Identifiant du groupe.
-	 */
-	private int idGroupe;
+     * Identifiant du groupe.
+     */
+    private int idGroupe;
 
     /**
      * initialiser les attributs.
@@ -111,10 +111,11 @@ public final class Personnels implements Ipersonnels, Serializable {
       this.numeroDeTel = numeroDeTelAtt;
       return (this);
     }
+
     /**
      * intialiser id du groupe.
-     * @param dateDeNaissAtt .
-     * @return date de naissance initialise.
+     * @param idGroupeAtt .
+     * @return id du groupe initialise.
      */
     public Builder idGroupe(int idGroupeAtt) {
       this.idGroupe = idGroupeAtt;
@@ -140,7 +141,7 @@ public final class Personnels implements Ipersonnels, Serializable {
     fonctions = build.fonctions;
     dateDeNaiss = build.dateDeNaiss;
     numeroDeTel = build.numeroDeTel;
-    idGroupe=build.idGroupe;
+    idGroupe = build.idGroupe;
   }
 
   /**
@@ -199,8 +200,8 @@ public final class Personnels implements Ipersonnels, Serializable {
     for (int num:this.numeroDeTel) {
       numtel.append(num);
     }
-    return "id du groupe : " + this.idGroupe+ " " +"nom : " + this.nom + " " + "prenom : " + this.prenom + " " + "fonctions:"
-      + this.fonctions + " " + "dateDeNaiss :" + this.dateDeNaiss + " " + "numero de telephone"
-      + numtel;
+    return "id du groupe : " + this.idGroupe + " " + "nom : " + this.nom + " " + "prenom : " 
+        + this.prenom + " " + "fonctions:" + this.fonctions + " " + "dateDeNaiss :" 
+            + this.dateDeNaiss + " " + "numero de telephone" + numtel;
   }
 }

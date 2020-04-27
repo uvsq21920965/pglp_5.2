@@ -14,8 +14,6 @@ public interface Dao<T> {
    * methode pour creer un fichier.
    * @param obj T.
    * @return obj crée.
-   * @throws SQLException 
-   * @throws ClassNotFoundException 
    */
   public T create(T obj);
 
